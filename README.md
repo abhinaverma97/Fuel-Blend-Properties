@@ -169,10 +169,4 @@ Contributions welcome! Please open an issue or PR for:
 - New features
 - Documentation updates
 
----
-
-**Author**: [Your Name]  
-**Competition**: Shell AI Hackathon 2025  
-**Rank**: Top 18 / ~7,000 participants  
-**Date**: November 2025
 
