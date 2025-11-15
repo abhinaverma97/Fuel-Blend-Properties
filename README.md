@@ -147,16 +147,6 @@ Scripts use GPU by default for XGBoost, LightGBM, and CatBoost. To run on CPU:
 - **Reproducibility**: Random seeds set (42) for all models
 - **Validation**: 5-fold stratified cross-validation
 
-## 🚀 Next Steps / Future Work
-
-- [ ] Add model versioning and A/B testing framework
-- [ ] Implement batch prediction endpoint
-- [ ] Add model explainability (SHAP values)
-- [ ] Deploy to cloud (AWS/Azure/Vercel)
-- [ ] Add authentication and user management
-- [ ] Create mobile-responsive PWA version
-- [ ] Implement real-time monitoring and logging
-
 ## 📄 License & Acknowledgements
 
 This repository was created for the Shell AI Hackathon 2025. Feel free to use for learning and experimentation. If publishing results, please acknowledge the original work.
