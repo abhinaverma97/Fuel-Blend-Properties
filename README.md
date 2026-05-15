@@ -4,7 +4,7 @@
 
 Full-stack machine learning project for predicting fuel blend properties (BlendProperty1-10) using ensemble stacking methods and deployed via a modern web application. This repository contains training pipelines, model artifacts, and a production-ready web interface for real-time predictions.
 
-## 🎯 Project Highlights
+## Project Highlights
 
 - **Hybrid Ensemble Architecture**: Combined multi-output and per-target stacking to exploit correlations while capturing per-target nuances
 - **Per-Target Feature Selection**: Optimized feature sets for each property, achieving 5% MAPE reduction vs baseline
@@ -12,7 +12,7 @@ Full-stack machine learning project for predicting fuel blend properties (BlendP
 - **Production Web App**: Next.js 15 + Flask API with glass-morphism dark UI for real-time predictions
 - **2% MAPE Improvement**: Through hybrid ensemble combining multi-output and per-target approaches
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Shell/
@@ -33,7 +33,7 @@ Shell/
 └── requirements.txt     # Python dependencies
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Train Models (Optional - pre-trained models included)
 
@@ -67,7 +67,7 @@ npm run dev
 ```
 Web app runs at `http://localhost:3000`
 
-## 🎨 Web Application Features
+## Web Application Features
 
 - **Responsive Glass-Morphism UI**: Dark mode with cyan/purple gradients
 - **Real-time Predictions**: Submit component data, get instant blend property predictions
@@ -76,7 +76,7 @@ Web app runs at `http://localhost:3000`
 - **60+ Input Fields**: 5 components × (1 fraction + 10 properties)
 - **10 Prediction Outputs**: All blend properties displayed with progress bars
 
-## 🧠 ML Pipeline Architecture
+## ML Pipeline Architecture
 
 ### Feature Engineering
 - **Interaction Features**: `Component{i}_fraction × Component{i}_Property{j}` (50 features)
@@ -103,14 +103,14 @@ Web app runs at `http://localhost:3000`
    - Log transformation for skewed targets (|skew| > 0.75)
    - Min-max clipping to training range
 
-## 📊 Results
+## Results
 
 - **Competition Rank**: Top 18 / ~7,000 participants
 - **MAPE Reduction**: 2% improvement via hybrid ensemble
 - **Feature Selection Gain**: 5% MAPE reduction vs baseline
 - **API Response Time**: <200ms per prediction
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Machine Learning
 - **Python 3.12**: Core language
@@ -124,7 +124,7 @@ Web app runs at `http://localhost:3000`
 - **Deployment**: RESTful API architecture
 - **UI/UX**: Glass morphism, dark mode, responsive design
 
-## 📝 Key Files
+## Key Files
 
 - `src/single-output.py` — Main training pipeline with OOF stacking
 - `models/meta_model_*.pkl` — 10 trained meta-learner models
@@ -132,7 +132,7 @@ Web app runs at `http://localhost:3000`
 - `blend-predictor/app/page.tsx` — Next.js frontend component
 - `blend-predictor/flask-api/app.py` — Flask prediction API
 
-## 🔧 GPU Acceleration
+## GPU Acceleration
 
 Scripts use GPU by default for XGBoost, LightGBM, and CatBoost. To run on CPU:
 
@@ -140,7 +140,7 @@ Scripts use GPU by default for XGBoost, LightGBM, and CatBoost. To run on CPU:
 **LightGBM**: Remove `device='gpu'`  
 **CatBoost**: Remove `task_type='GPU'`
 
-## 📈 Model Performance Notes
+## Model Performance Notes
 
 - **Target Transformation**: Automatic log1p for skewed targets
 - **Negative Handling**: Shift adjustment for negative values before log
